@@ -1,0 +1,111 @@
+/* --- ESTILOS GERAIS --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #141414; /* Fundo bem escuro, quase preto */
+    color: #ffffff; /* Texto branco */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px; /* Largura máxima para o conteúdo central */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+/* --- CABEÇALHO --- */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #e50914; /* Vermelho vibrante, inspirado em serviços de streaming */
+    margin: 0;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #aaa;
+}
+
+/* --- LISTA DE FILMES --- */
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Espaço entre os cartões de filme */
+}
+
+/* --- CARTÃO DE FILME --- */
+.movie-card {
+    display: flex;
+    gap: 25px; /* Espaço entre a imagem e os detalhes */
+    background-color: #1f1f1f; /* Fundo do cartão um pouco mais claro que o body */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Garante que nada saia dos cantos arredondados */
+}
+
+.movie-card img {
+    width: 200px; /* Largura fixa para o pôster */
+    height: 300px;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 5px;
+}
+
+.movie-details {
+    flex: 1; /* Permite que esta div ocupe o espaço restante */
+}
+
+.movie-details h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.movie-info {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.movie-synopsis {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* --- SESSÕES DISPONÍVEIS --- */
+.sessions {
+    margin-top: 20px;
+}
+
+.sessions h3 {
+    font-size: 1em;
+    color: #e50914;
+    border-left: 3px solid #e50914;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.session-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.session-btn:hover {
+    background-color: #e50914; /* Muda para a cor de destaque ao passar o mouse */
+}
